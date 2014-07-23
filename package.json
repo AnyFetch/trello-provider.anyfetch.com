@@ -1,0 +1,37 @@
+{
+  "name": "anyfetch-PROVIDER_NAME-PROVIDER",
+  "version": "0.1.0",
+  "author": "You <you@example.com>",
+  "bin": {
+    "server": "./bin/server"
+  },
+  "scripts": {
+    "start": "node ./bin/server",
+    "test": "NODE_ENV=test mocha -R spec -t 25000"
+  },
+  "main": "./lib/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOU/PROVIDER_NAME.provider.example.com"
+  },
+  "keywords": [
+    "anyfetch",
+    "provider",
+    "PROVIDER"
+  ],
+  "dependencies": {
+    "async": "0.9.x",
+    "request": "2.37.x",
+    "anyfetch-provider": "^1.0.22",
+    "dotenv": "^0.4.0"
+  },
+  "devDependencies": {
+    "mocha": "1.20.x",
+    "should": "4.0.x",
+    "supertest": "0.13.x"
+  },
+  "licence": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
+}
