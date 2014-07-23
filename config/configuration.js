@@ -25,9 +25,14 @@ module.exports = {
   env: node_env,
   port: process.env.PORT || default_port,
 
+  trelloKey: process.env.TRELLO_API_KEY,
+  trelloSecret: process.env.TRELLO_API_SECRET,
+  trelloAppname: process.env.TRELLO_APPNAME,
   // Optional params
 
+
+
   providerUrl: process.env.PROVIDER_URL,
-  appid: process.env.PROVIDER_ANYFETCH_ID,
-  appSecret: process.env.PROVIDER_ANYFETCH_SECRET,
+  appid: process.env.ANYFETCH_ID,
+  appSecret: process.env.ANYFETCH_SECRET,
 };
