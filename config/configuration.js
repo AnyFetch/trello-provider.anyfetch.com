@@ -33,6 +33,6 @@ module.exports = {
 
 
   providerUrl: process.env.PROVIDER_URL,
-  appid: process.env.ANYFETCH_ID,
+  appId: process.env.ANYFETCH_ID,
   appSecret: process.env.ANYFETCH_SECRET,
 };
