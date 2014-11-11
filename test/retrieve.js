@@ -6,7 +6,7 @@ var config = require('../config/configuration.js');
 var retrieve = require('../lib/helpers/retrieve.js');
 
 var cleanUp = require('../lib/helpers/retrieve.js').cleanUp;
-var card = require('./card.json');
+var card = require('./raw-card.json');
 
 
 describe("Retrieve code", function() {
