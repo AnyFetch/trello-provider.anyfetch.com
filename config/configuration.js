@@ -29,6 +29,8 @@ module.exports = {
   trelloSecret: process.env.TRELLO_API_SECRET,
   trelloAppname: process.env.TRELLO_APPNAME,
 
+  testAccessToken: process.env.TRELLO_ACCESS_TOKEN,
+
   providerUrl: process.env.PROVIDER_URL,
   appId: process.env.ANYFETCH_API_ID,
   appSecret: process.env.ANYFETCH_API_SECRET,
