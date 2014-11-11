@@ -1,7 +1,7 @@
 {
-  "name": "anyfetch-PROVIDER_NAME-PROVIDER",
+  "name": "anyfetch-trello-provider",
   "version": "0.1.0",
-  "author": "You <you@example.com>",
+  "author": "Hugo Duroux <hugo.duroux@gmail.com>",
   "bin": {
     "server": "./bin/server"
   },
@@ -12,25 +12,25 @@
   "main": "./lib/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOU/PROVIDER_NAME.provider.example.com"
+    "url": "https://github.com/AnyFetch/trello-provider.anyfetch.com"
   },
   "keywords": [
     "anyfetch",
     "provider",
-    "PROVIDER"
+    "trello"
   ],
   "dependencies": {
-    "async": "0.9.x",
-    "request": "2.37.x",
-    "anyfetch-provider": "^1.0.22",
+    "anyfetch-provider": "^1.2.4",
+    "async": "^0.9.0",
     "dotenv": "^0.4.0",
-    "oauth": "0.9.12"
+    "mocha": "^2.0.1",
+    "node-trello": "^1.0.1",
+    "oauth": "^0.9.12",
+    "rarity": "^2.1.1",
+    "should": "^4.3.0",
+    "supertest": "^0.14.0"
   },
-  "devDependencies": {
-    "mocha": "1.20.x",
-    "should": "4.0.x",
-    "supertest": "0.13.x"
-  },
+  "devDependencies": {},
   "licence": "MIT",
   "engines": {
     "node": ">=0.10"

@@ -28,11 +28,8 @@ module.exports = {
   trelloKey: process.env.TRELLO_API_KEY,
   trelloSecret: process.env.TRELLO_API_SECRET,
   trelloAppname: process.env.TRELLO_APPNAME,
-  // Optional params
-
-
 
   providerUrl: process.env.PROVIDER_URL,
-  appId: process.env.ANYFETCH_ID,
-  appSecret: process.env.ANYFETCH_SECRET,
+  appId: process.env.ANYFETCH_API_ID,
+  appSecret: process.env.ANYFETCH_API_SECRET,
 };

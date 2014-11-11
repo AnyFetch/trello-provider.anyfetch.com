@@ -6,10 +6,10 @@ require('should');
 var app = require('../app.js');
 
 describe("GET /init/connect", function() {
-  it("should redirect to PROVIDER", function(done) {
+  it("should redirect to Trello", function(done) {
     request(app).get('/init/connect?code=123')
       .expect(302)
-      .expect('Location', /PROVIDER\.com/)
+      .expect('Location', /trello\.com/)
       .end(done);
   });
 });
