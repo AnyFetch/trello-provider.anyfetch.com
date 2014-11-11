@@ -1,0 +1,106 @@
+{
+  "id": "545ca40a975a3e830c8b314c",
+  "dateLastActivity": "2014-11-10T10:40:53.449Z",
+  "desc": "",
+  "labels": [
+    {
+      "id": "545dd43874d650d5678516f4",
+      "idBoard": "52d90a673383246c5b9b25a1",
+      "name": "Hydraters / providers / libs",
+      "color": "blue",
+      "uses": 637
+    }
+  ],
+  "name": "Bug for anyfetch date span",
+  "shortUrl": "https://trello.com/c/BkuFa0FF",
+  "attachments": [
+    {
+      "id": "545ca40b393e26244f3e6d49",
+      "bytes": 41450,
+      "date": "2014-11-07T10:50:51.367Z",
+      "edgeColor": "#fcfcfc",
+      "idMember": "51af67aedb72ac3f4500066f",
+      "isUpload": true,
+      "mimeType": null,
+      "name": "_20141107_115028.JPG.jpeg",
+      "previews": [
+        {
+          "width": 70,
+          "height": 50,
+          "url": "https://trello-attachments.s3.amazonaws.com/545ca40a975a3e830c8b314c/70x50/b093a37c83580b9ab84cfd1fff9895a6/_20141107_115028.JPG.jpeg.png",
+          "bytes": 2419,
+          "_id": "545ca40d393e26244f3e6d4f",
+          "scaled": false
+        }
+      ],
+      "url": "https://trello-attachments.s3.amazonaws.com/545ca40a975a3e830c8b314c/1080x433/652d1291a43a772a5d03ec98066c1de5/_20141107_115028.JPG.jpeg"
+    }
+  ],
+  "members": [
+    {
+      "id": "52d90b9002a1fe900d482d20",
+      "avatarHash": "f601e1f5d1ca9387d327e5b17947fad0",
+      "fullName": "Hugo DUROUX",
+      "initials": "HD",
+      "username": "amoki"
+    }
+  ],
+  "actions": [
+    {
+      "id": "53fdf0dd7b6d756ba79e4683",
+      "idMemberCreator": "534fce99b987369e26fda4ef",
+      "data": {
+        "dateLastEdited": "2014-08-27T14:53:23.324Z",
+        "textData": {
+          "emoji": {}
+        },
+        "text": "Or at the very least we should find a way to include it from the correct URL (depending on localhost / staging / prod).",
+        "card": {
+          "id": "53ee01a5dc0c2804e3c0d08b",
+          "name": "When opening full-view on desktop (new tab), do not include FontAwesome just for a few icons",
+          "idShort": 158,
+          "shortLink": "wo7UFs53"
+        },
+        "board": {
+          "id": "52ef5b6c137f565d572534c1",
+          "name": "salesFetch Dev",
+          "shortLink": "lzSpG97m"
+        }
+      },
+      "type": "commentCard",
+      "date": "2014-08-27T14:53:17.412Z",
+      "memberCreator": {
+        "id": "534fce99b987369e26fda4ef",
+        "avatarHash": "7f65585411a89fa8cdbe02970830d350",
+        "fullName": "Merlin Nimier-David",
+        "initials": "MN",
+        "username": "merlinnimierdavid1"
+      }
+    }
+  ],
+  "checklists": [
+    {
+      "id": "54510dba1d8b7d7e1f6b5364",
+      "name": "Checklist",
+      "idBoard": "52d90a673383246c5b9b25a1",
+      "idCard": "54510db50eb2dc72cf831bb6",
+      "pos": 16384,
+      "checkItems": [
+        {
+          "state": "incomplete",
+          "id": "54510dc00e81e6d22e75176e",
+          "name": "https via nginx",
+          "nameData": null,
+          "pos": 17105
+        },
+        {
+          "state": "incomplete",
+          "id": "54510dda3d01992d1f9dc5f3",
+          "name": "riak-curl/es-curl or something like this",
+          "nameData": null,
+          "pos": 34415
+        }
+      ]
+    }
+  ]
+}
