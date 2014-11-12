@@ -11,7 +11,7 @@ var card = require('./raw-card.json');
 
 describe("Retrieve code", function() {
   it("should list cards", function(done) {
-    retrieve(config.testAccessToken, new Date(2008, 0, 1), function(err, cards) {
+    retrieve(config.testAccessToken, new Date('2008'), function(err, cards) {
       if(err) {
         throw err;
       }
