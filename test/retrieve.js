@@ -57,6 +57,15 @@ describe('cleanUp', function() {
       'description'
     ]);
 
+    cleanCard.comments.should.have.lengthOf(1);
+    cleanCard.comments[0].should.have.properties(['text', 'creator']);
+
+    cleanCard.checklists.should.have.lengthOf(1);
+    cleanCard.checklists[0].should.have.properties(['name', 'checkItems']);
+
+    cleanCard.labels.should.have.lengthOf(1);
+    cleanCard.labels[0].should.have.properties(['name', 'color']);
+
     done();
   });
 });
