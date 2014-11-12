@@ -9,7 +9,7 @@ var cleanUp = require('../lib/helpers/retrieve.js').cleanUp;
 var card = require('./raw-card.json');
 
 
-describe("Retrieve code", function() {
+describe.only("Retrieve code", function() {
   it("should list cards", function(done) {
     retrieve(config.testAccessToken, new Date(2008, 0, 1), function(err, cards) {
       if(err) {
