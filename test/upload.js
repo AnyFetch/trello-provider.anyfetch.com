@@ -9,7 +9,7 @@ require('should');
 var config = require('../config/configuration.js');
 var serverConfig = require('../lib/');
 
-describe("Workflow", function() {
+describe.skip("Workflow", function() {
   before(AnyFetchProvider.debug.cleanTokens);
 
   // Create a fake HTTP server

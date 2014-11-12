@@ -9,7 +9,7 @@ var cleanUp = require('../lib/helpers/retrieve.js').cleanUp;
 var card = require('./raw-card.json');
 
 
-describe.only("Retrieve code", function() {
+describe("Retrieve code", function() {
   it("should list cards", function(done) {
     retrieve(config.testAccessToken, new Date(2008, 0, 1), function(err, cards) {
       if(err) {
@@ -54,7 +54,8 @@ describe('cleanUp', function() {
       'comments',
       'checklists',
       'url',
-      'description'
+      'description',
+      'identifier',
     ]);
 
     cleanCard.comments.should.have.lengthOf(1);
