@@ -21,7 +21,7 @@ describe("Retrieve code", function() {
       cards[0].should.have.property('title', 'Testing card');
       cards[0].should.have.property('description', '');
       cards[0].should.have.property('checklists', []);
-      cards[0].should.have.property('actions', []);
+      cards[0].should.have.property('comments', []);
       cards[0].should.have.property('members', []);
       cards[0].should.have.property('labels', []);
       cards[0].should.have.property('dateLastActivity', '2014-11-11T09:52:00.085Z');
@@ -51,7 +51,7 @@ describe('cleanUp', function() {
       'dateLastActivity',
       'labels',
       'members',
-      'actions',
+      'comments',
       'checklists',
       'url',
       'description'
