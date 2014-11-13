@@ -10,7 +10,7 @@ var card = require('./raw-card.json');
 
 
 describe("Retrieve code", function() {
-  it.only("should list cards", function(done) {
+  it("should list cards", function(done) {
     retrieve(config.testAccessToken, new Date('2008'), function(err, cards) {
       if(err) {
         throw err;
@@ -21,8 +21,8 @@ describe("Retrieve code", function() {
       cards[0].should.have.property('identifier', 'https://trello.com/c/qJWgjteJ');
       cards[0].should.have.property('board', 'Test Trello Provider');
       cards[0].should.have.property('title', 'Testing card');
-      cards[0].should.have.property('list', 'Test 1');
       cards[0].should.have.property('description', '');
+      cards[0].should.have.property('list', 'Test 1');
       cards[0].should.have.property('checklists', []);
       cards[0].should.have.property('comments', []);
       cards[0].should.have.property('members', []);

@@ -9,7 +9,7 @@ require('should');
 var config = require('../config/configuration.js');
 var serverConfig = require('../lib/');
 
-describe.skip("Workflow", function() {
+describe("Workflow", function() {
   before(AnyFetchProvider.debug.cleanTokens);
 
   // Create a fake HTTP server
@@ -21,12 +21,10 @@ describe.skip("Workflow", function() {
     AnyFetchProvider.debug.createToken({
       anyfetchToken: 'fake_gc_access_token',
       data: {
-        tokens: {
-          refresh_token: config.testRefreshToken
-        },
+        accessToken: config.testAccessToken,
         callbackUrl: config.providerUrl + "/init/callback"
       },
-      cursor: new Date(2008),
+      cursor: new Date("2008"),
       accountName: 'accountName'
     }, done);
   });
@@ -43,7 +41,6 @@ describe.skip("Workflow", function() {
           done();
         }
         else {
-          console.log('recheck');
           setTimeout(checkSpy, 100);
         }
       }
@@ -54,9 +51,8 @@ describe.skip("Workflow", function() {
       }
 
       spyPost = sinon.spy(job.anyfetchClient, "postDocument");
-
       job.task.should.have.property('url');
-      job.task.should.have.property('id');
+      job.task.should.have.property('identifier');
 
       originalQueueWorker(job, cb);
     };
