@@ -47,6 +47,20 @@
   ],
   "actions": [
     {
+      "id": "5461dc47f9a79f418838d11d",
+      "idMemberCreator": "52d90b9002a1fe900d482d20",
+      "data": { "board": [], "list": [], "card": [] },
+      "type": "createCard",
+      "date": "2014-11-11T09:52:07.217Z",
+      "memberCreator": {
+        "id": "52d90b9002a1fe900d482d20",
+        "avatarHash": "f601e1f5d1ca9387d327e5b17947fad0",
+        "fullName": "Hugo DUROUX",
+        "initials": "HD",
+        "username": "amoki"
+      }
+    },
+    {
       "id": "53fdf0dd7b6d756ba79e4683",
       "idMemberCreator": "534fce99b987369e26fda4ef",
       "data": {
@@ -77,17 +91,37 @@
         "username": "merlinnimierdavid1"
       }
     },
-    { "id": "5461dc47f9a79f418838d11d",
-    "idMemberCreator": "52d90b9002a1fe900d482d20",
-    "data": { "board": [], "list": [], "card": [] },
-    "type": "createCard",
-    "date": "2014-11-11T09:52:07.217Z",
-    "memberCreator":
-     { "id": "52d90b9002a1fe900d482d20",
-       "avatarHash": "f601e1f5d1ca9387d327e5b17947fad0",
-       "fullName": "Hugo DUROUX",
-       "initials": "HD",
-       "username": "amoki" } }
+    {
+      "id": "53fdf0dd7b6d756ba79e4683",
+      "idMemberCreator": "534fce99b987369e26fda4ef",
+      "data": {
+        "dateLastEdited": "2014-08-27T14:53:23.324Z",
+        "textData": {
+          "emoji": {}
+        },
+        "text": "Or at the very least we should find a way to include it from the correct URL (depending on localhost / staging / prod).",
+        "card": {
+          "id": "53ee01a5dc0c2804e3c0d08b",
+          "name": "When opening full-view on desktop (new tab), do not include FontAwesome just for a few icons",
+          "idShort": 158,
+          "shortLink": "wo7UFs53"
+        },
+        "board": {
+          "id": "52ef5b6c137f565d572534c1",
+          "name": "salesFetch Dev",
+          "shortLink": "lzSpG97m"
+        }
+      },
+      "type": "commentCard",
+      "date": "2014-08-27T14:53:17.412Z",
+      "memberCreator": {
+        "id": "534fce99b987369e26fda4ef",
+        "avatarHash": "7f65585411a89fa8cdbe02970830d350",
+        "fullName": "Merlin Nimier-David",
+        "initials": "MN",
+        "username": "merlinnimierdavid1"
+      }
+    }
   ],
   "checklists": [
     {

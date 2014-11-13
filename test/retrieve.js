@@ -63,7 +63,7 @@ describe('cleanUp', function() {
 
     cleanCard.creationDate.should.be.eql("2014-11-11T09:52:07.217Z");
 
-    cleanCard.comments.should.have.lengthOf(1);
+    cleanCard.comments.should.have.lengthOf(2);
     cleanCard.comments[0].should.have.properties(['text', 'creator']);
 
     cleanCard.checklists.should.have.lengthOf(1);
