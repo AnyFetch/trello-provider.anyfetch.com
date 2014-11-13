@@ -10,24 +10,28 @@ var dotenv = require('dotenv');
 dotenv.load();
 
 // node_env can either be "development" or "production"
-var node_env = process.env.NODE_ENV || "development";
+var nodeEnv = process.env.NODE_ENV || "development";
 
 // Port to run the app on. 8000 for development
 // (Vagrant syncs this port)
 // 80 for production
-var default_port = 8000;
-if(node_env === "production") {
-  default_port = 80;
+var defaultPort = 8000;
+if(nodeEnv === "production") {
+  defaultPort = 80;
 }
 
 // Exports configuration for use by app.js
 module.exports = {
-  env: node_env,
-  port: process.env.PORT || default_port,
+  env: nodeEnv,
+  port: process.env.PORT || defaultPort,
 
-  // Optional params
+  trelloKey: process.env.TRELLO_API_KEY,
+  trelloSecret: process.env.TRELLO_API_SECRET,
+  trelloAppname: process.env.TRELLO_APPNAME,
+
+  testAccessToken: process.env.TRELLO_ACCESS_TOKEN,
 
   providerUrl: process.env.PROVIDER_URL,
-  appid: process.env.PROVIDER_ANYFETCH_ID,
-  appSecret: process.env.PROVIDER_ANYFETCH_SECRET,
+  appId: process.env.ANYFETCH_API_ID,
+  appSecret: process.env.ANYFETCH_API_SECRET,
 };
