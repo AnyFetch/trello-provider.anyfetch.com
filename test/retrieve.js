@@ -58,7 +58,10 @@ describe('cleanUp', function() {
       'url',
       'description',
       'identifier',
+      'creationDate'
     ]);
+
+    cleanCard.creationDate.should.be.eql("2014-11-11T09:52:07.217Z");
 
     cleanCard.comments.should.have.lengthOf(1);
     cleanCard.comments[0].should.have.properties(['text', 'creator']);

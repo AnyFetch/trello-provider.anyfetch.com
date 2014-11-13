@@ -76,7 +76,18 @@
         "initials": "MN",
         "username": "merlinnimierdavid1"
       }
-    }
+    },
+    { "id": "5461dc47f9a79f418838d11d",
+    "idMemberCreator": "52d90b9002a1fe900d482d20",
+    "data": { "board": [], "list": [], "card": [] },
+    "type": "createCard",
+    "date": "2014-11-11T09:52:07.217Z",
+    "memberCreator":
+     { "id": "52d90b9002a1fe900d482d20",
+       "avatarHash": "f601e1f5d1ca9387d327e5b17947fad0",
+       "fullName": "Hugo DUROUX",
+       "initials": "HD",
+       "username": "amoki" } }
   ],
   "checklists": [
     {
