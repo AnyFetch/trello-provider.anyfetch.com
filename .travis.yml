@@ -6,6 +6,9 @@ before_script: npm install --dev
 script: npm test
 env:
   global:
-    - PROVIDER_URL="http://localhost:8000"
-    - PROVIDER_ANYFETCH_ID="CLUESTR-ID"
-    - PROVIDER_ANYFETCH_SECRET="CLUESTR-SECRET"
+  - PROVIDER_URL="http://localhost:8000"
+  - PROVIDER_ANYFETCH_ID="CLUESTR-ID"
+  - PROVIDER_ANYFETCH_SECRET="CLUESTR-SECRET"
+  - secure: MGVuFcgTxnmmmkQYLVd3QcHZs2XPqyvZaM0TC75OQ3B/z0miW+eCN1voQG/E0cm/M8XqDffeWbqMZehHzA2uEmLBRm0rqtRRUK9gphRtrGoSFTWQZBWIHyZ/bz27aF/Fqq3zSgZuKiL5ykMbmbW8mFnXYzsYTywRyFmoGRLQgbY=
+  - secure: OFxTlQ9z2GWkrQ1ZXB7GfoLv3npN9qP1toX68nvZeKoV2yIYctJn+kS+kHogclpP5KQs7mOImEkVHrFwUHamXe/GeJJwwTuMBKJfM6+jntXsoTPnb5Apbuev181rWHozH6iGzrQZ064SW02r+UE+ZK2E/LTfSLKyCGOP1IWqvHM=
+  - secure: YSVwpbrPNarhvh/sGONmmVkjuZnrsprYWRjHFPhdhHqeMmuGPsta4quHKs8VZ3rbSid3EivJLIkjNyBovCS4TL3Rsd+R6NcJqiNT7XL7VFZvRgydHLRjfR/S6jZCY4q9CjVHB3MQ/1cYjnNUeXaBPBf2czQ6aEQt5NyFLSX8yIM=
