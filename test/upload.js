@@ -3,7 +3,6 @@
 var request = require('supertest');
 var AnyFetchProvider = require('anyfetch-provider');
 var Anyfetch = require('anyfetch');
-var sinon = require('sinon');
 require('should');
 
 var config = require('../config/configuration.js');
@@ -30,33 +29,8 @@ describe("Workflow", function() {
   });
 
   it("should upload data to AnyFetch", function(done) {
-    var spyPost = null;
-
-    var originalQueueWorker = serverConfig.workers.addition;
-    serverConfig.workers.addition = function(job, cb) {
-      function checkSpy() {
-        if(spyPost && spyPost.callCount === 1) {
-          spyPost.callCount.should.eql(1);
-          spyPost.restore();
-          done();
-        }
-        else {
-          setTimeout(checkSpy, 100);
-        }
-      }
-
-      if(job.task._special) {
-        setTimeout(checkSpy, 500);
-        return cb(null);
-      }
-
-      spyPost = sinon.spy(job.anyfetchClient, "postDocument");
-      job.task.should.have.property('url');
-      job.task.should.have.property('identifier');
-
-      originalQueueWorker(job, cb);
-    };
-    var server = AnyFetchProvider.createServer(serverConfig.connectFunctions, serverConfig.updateAccount, serverConfig.workers, serverConfig.config);
+    serverConfig.config.retry = 0;
+    var server = AnyFetchProvider.createServer(serverConfig.connectFunctions, __dirname + '/workers-test.js', __dirname + '/../lib/update.js', serverConfig.config);
 
     request(server)
       .post('/update')
@@ -70,8 +44,18 @@ describe("Workflow", function() {
         if(err) {
           throw err;
         }
-
-        server.queue.create('addition', {_special: true, _anyfetchToken: 'fake_gc_access_token', _anyfetchApiUrl: 'http://localhost:1337'}).priority('low').save();
       });
+
+    server.usersQueue.on('job.task.failed', function(job, err) {
+      done(err);
+    });
+
+    server.usersQueue.on('job.update.failed', function(job, err) {
+      done(err);
+    });
+    server.usersQueue.once('empty', function() {
+      done();
+    });
   });
 });
+
