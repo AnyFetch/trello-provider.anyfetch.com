@@ -31,7 +31,9 @@ module.exports = {
 
   testAccessToken: process.env.TRELLO_ACCESS_TOKEN,
 
-  concurrency: process.env.TRELLO_CONCURRENCY || 1,
+  usersConcurrency: process.env.USERS_CONCURRENCY || 1,
+  concurrency: process.env.CONCURRENCY || 1,
+
   providerUrl: process.env.PROVIDER_URL,
   appId: process.env.ANYFETCH_API_ID,
   appSecret: process.env.ANYFETCH_API_SECRET,
