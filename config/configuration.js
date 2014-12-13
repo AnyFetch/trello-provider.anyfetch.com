@@ -37,4 +37,10 @@ module.exports = {
   providerUrl: process.env.PROVIDER_URL,
   appId: process.env.ANYFETCH_API_ID,
   appSecret: process.env.ANYFETCH_API_SECRET,
+
+  opbeat: {
+    organizationId: process.env.OPBEAT_ORGANIZATION_ID,
+    appId: process.env.OPBEAT_APP_ID,
+    secretToken: process.env.OPBEAT_SECRET_TOKEN
+  }
 };
