@@ -24,6 +24,7 @@
     "anyfetch-provider": "^3.0.10",
     "async": "^0.9.0",
     "dotenv": "^0.4.0",
+    "html-entities": "^1.1.1",
     "node-trello": "^1.0.1",
     "oauth": "^0.9.12",
     "rarity": "^2.1.1"
