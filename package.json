@@ -21,7 +21,7 @@
   ],
   "dependencies": {
     "anyfetch": "^2.1.3",
-    "anyfetch-provider": "^3.0.11",
+    "anyfetch-provider": "^3.0.12",
     "async": "^0.9.0",
     "dotenv": "^0.4.0",
     "html-entities": "^1.1.1",
