@@ -23,7 +23,7 @@ describe("Workflow", function() {
         accessToken: config.testAccessToken,
         callbackUrl: config.providerUrl + "/init/callback"
       },
-      cursor: new Date(),
+      cursor: new Date("2007"),
       accountName: 'accountName'
     }, done);
   });
